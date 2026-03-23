@@ -2,7 +2,7 @@
 
 Landing page for Scaleflex plugins — digital asset management tools for the modern web.
 
-**Live site:** https://scaleflex.github.io/scaleflex-pages/
+**Live site:** https://scaleflex.github.io/scaleflex-plugins/
 
 ## Plugins
 
