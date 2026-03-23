@@ -822,6 +822,80 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
+   Cross-Promotion Banner
+   -------------------------------------------------------------------------- */
+.cross-promo {
+  padding: var(--space-4xl) 0;
+  background: var(--color-dark);
+}
+
+.cross-promo__card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.cross-promo__card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cross-promo__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(44, 153, 255, 0.15), rgba(0, 212, 170, 0.15));
+  flex-shrink: 0;
+}
+
+.cross-promo__icon svg {
+  color: var(--color-primary-light);
+}
+
+.cross-promo__content {
+  flex: 1;
+}
+
+.cross-promo__label {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary-light);
+  margin-bottom: var(--space-xs);
+}
+
+.cross-promo__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
+}
+
+.cross-promo__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light-secondary);
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+.cross-promo__cta {
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
 .footer {
@@ -1126,6 +1200,20 @@ ul, ol {
 
   .footer__brand {
     max-width: 100%;
+  }
+
+  .cross-promo__card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cross-promo__desc {
+    max-width: 100%;
+  }
+
+  .cross-promo__cta {
+    width: 100%;
+    justify-content: center;
   }
 }
 
