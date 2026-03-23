@@ -1,0 +1,10 @@
+{
+  "name": "scaleflex-plugins",
+  "version": "1.0.0",
+  "description": "Scaleflex Plugins Hub — Asset Picker, Uploader, Experience Picker",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "private": true
+}
